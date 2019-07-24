@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Ooui;
+using Samples.Storyboards;
 
 namespace Samples
 {
@@ -48,6 +49,7 @@ namespace Samples
                 new XuzzleSample(),
                 new WebViewSample(),
                 new PickerSample(),
+                new PlaygroundSample(),
             };
 
             foreach (var sample in samples)

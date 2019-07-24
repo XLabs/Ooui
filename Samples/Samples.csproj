@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.2.0.538286" />
+    <PackageReference Include="Xamarin.Forms" Version="4.3.0.974" />
   </ItemGroup>
 	
   <ItemGroup>
@@ -59,6 +59,10 @@
     <EmbeddedResource Update="WeatherApp\WeatherPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Storyboards\Playground.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
     
   <ItemGroup>
@@ -75,6 +79,9 @@
     <None Remove="Monkeys\MonkeysView.xaml" />
     <None Remove="TipCalc\TipCalcPage.xaml" />
     <None Remove="WeatherApp\WeatherPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Storyboards\" />
   </ItemGroup>
   <PropertyGroup>
     <OutputType>Exe</OutputType>
