@@ -131,7 +131,10 @@ namespace Ooui.Forms.Renderers
         {
             _perfectSizeValid = false;
 
-            var values = Element.GetValues (Xamarin.Forms.Label.FormattedTextProperty, Xamarin.Forms.Label.TextProperty, Xamarin.Forms.Label.TextColorProperty);
+            var values = new object[3];
+            values[0] = Element.GetValue (Xamarin.Forms.Label.FormattedTextProperty);
+            values[1] = Element.GetValue (Xamarin.Forms.Label.TextProperty);
+            values[2] = Element.GetValue (Xamarin.Forms.Label.TextColorProperty);
             var formatted = values[0] as FormattedString;
             if (formatted != null) {
                 Control.Text = (string)values[1];
